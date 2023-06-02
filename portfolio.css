@@ -372,8 +372,88 @@ header {
     justify-content: space-between;
 }
 
-/* sign up form container*/
-.signup-container{
+
+
+.testimonials-container {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    width: 100%;
+    height: calc(100vh -92px);
+    margin: 0 auto;
+    gap: 3rem;
+    padding: 3rem;
+    border-radius: 7rem;
+    scroll-behavior: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scroll-padding: 2rem;
+}
+
+.testimonials-container::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial {
+    display: flex;
+    flex: 0 0 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 400px;
+    max-width: 90vw;
+    height: fit-content;
+    align-items: center;
+    background-color:  #220739;
+    color: #fff;
+    border-radius: 14px;
+    padding: 1rem;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.testimonial-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.testimonial h3 {
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: #04dc12;
+}
+
+.testimonial h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial img {
+    width: 25vh;
+    height: 25vh;
+    max-width: 240px;
+    max-height: 248px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    width: 95%;
+}
+
+
+/* contact form container*/
+.contact-container{
     max-width: 400px;
     margin: 40px auto;
     padding: 20px;
@@ -381,9 +461,10 @@ header {
     background-color: #f9f9f9;
 }
 /* form style*/
-.signup-form input[type="text"],
-.signup-form input[type="email"],
-.signup-form input[type="password"]{
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="phone"],
+.contact-form input[type="massage"]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -392,7 +473,7 @@ header {
 }
 
 
-.signup-form button{
+.contact-form button{
     background-color: #4caf50;
     color: white;
     padding: 14px 20px;
@@ -402,12 +483,12 @@ header {
 }
 
 
-.signup-form button:hover{
+.contact-form button:hover{
     opacity: 0.8;
 }
 /* responsive layout */
 @media screen and (max-width:600px){
-    .signup-container{
+    .contact-container{
         max-width: 300px;
     }
 }
