@@ -412,7 +412,7 @@ header {
 
 .resume-edu-details h2{
     font-weight: 700;
-    color: var(--my-purple);
+    color:#220739;
 }
 
 .resume-edu-card-desc-text{
@@ -474,7 +474,7 @@ header {
     /* justify-content: center; */
     gap: 1rem;
     padding: 1rem;
-    background-color:#2d033a;
+    background-color:#220739;
     color: #fff;
     border-radius: 4px;
     width: 300px;
@@ -608,8 +608,14 @@ header {
     max-width: 400px;
     margin: 40px auto;
     padding: 20px;
-    border: 1px solid purple;
-    background-color: #f9f9f9;
+    background-color: #220739;
+    color: #fff;
+}
+.color{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #04dc12;
+    text-align: center;
 }
 /* form style*/
 .contact-form input[type="text"],
@@ -622,18 +628,14 @@ header {
     display: inline-block;
     box-sizing: border-box;
 }
-
-
 .contact-form button{
-    background-color: #4caf50;
+    background-color: #04dc12;
     color: white;
     padding: 14px 20px;
     border: none;
     cursor: pointer;
     width: 100%;
 }
-
-
 .contact-form button:hover{
     opacity: 0.8;
 }
@@ -643,9 +645,6 @@ header {
         max-width: 300px;
     }
 }
-
-
-
 @media (max-width: 768px){
     .about-details{
         flex-flow: column nowrap;
